@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 5px;
+    padding: 5px;
+}
+
+.grid-item {
+    text-align: center;
+    color: white;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+}
